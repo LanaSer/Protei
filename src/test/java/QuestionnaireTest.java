@@ -75,7 +75,7 @@ public class QuestionnaireTest {
     }
     @Test
     public void FalseEmailATest() {// Тестируем даст ли ввести данные с некорректным email
-        objquestionnaire.setDataEmail("test@protei.ру");// вводим некорректный email "test@protei.ру"
+        objquestionnaire.setDataEmail("test@protei.ру");// вводим некорректный email "testprotei.ru"
         objquestionnaire.setDataName("Миша");//вводим имя
         objquestionnaire.clickDataSend();//нажимаем кнопку добавить
         String newGetEmailFormatError = objquestionnaire.getEmailFormatError();// тест падает. дает содать анкету с  некорректным email
